@@ -1,0 +1,29 @@
+<section class="carousel" aria-label="Product Images">
+  <div class="carousel-images">
+    <img
+      class="current-img"
+      [src]="'../../assets/image-product-' + index + '.jpg'"
+      alt="product image"
+    />
+  </div>
+  <div class="preview-images desktop">
+    <button class="carousel-images" (click)="setCurrentImage(1)">
+      <img src="../../assets/image-product-1.jpg" alt="product image" />
+    </button>
+    <button class="carousel-images" (click)="setCurrentImage(2)">
+      <img src="../../assets/image-product-2.jpg" alt="product image" />
+    </button>
+    <button class="carousel-images" (click)="setCurrentImage(3)">
+      <img src="../../assets/image-product-3.jpg" alt="product image" />
+    </button>
+    <button class="carousel-images" (click)="setCurrentImage(4)">
+      <img src="../../assets/image-product-4.jpg" alt="product image" />
+    </button>
+  </div>
+  <button class="prev" (click)="carouselSwitch(true)">
+    <img src="../../assets/icon-previous.svg" alt="" />
+  </button>
+  <button class="next" (click)="carouselSwitch(true)">
+    <img src="../../assets/icon-next.svg" alt="" />
+  </button>
+</section>
