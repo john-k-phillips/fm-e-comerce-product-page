@@ -6,9 +6,6 @@
 
 .carousel-images {
   width: 100%;
-  img {
-    max-width: 100%;
-  }
 }
 
 // Carousel Button Styles
@@ -37,4 +34,41 @@
 
 .next {
   right: 15px;
+}
+
+.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop {
+    display: block;
+  }
+
+  .next,
+  .prev {
+    display: none;
+  }
+
+  .carousel-images {
+    display: flex;
+    margin-top: 2em;
+  }
+
+  .current-img {
+    max-width: 500px;
+    margin: auto;
+    border-radius: 1em;
+  }
+  .preview-images {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    .carousel-images {
+      max-width: calc(500px / 4 - 1em);
+      img {
+        border-radius: 1em;
+      }
+    }
+  }
 }
