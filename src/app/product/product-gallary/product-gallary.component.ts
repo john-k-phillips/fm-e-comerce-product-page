@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../product.service';
 
 @Component({
   selector: 'app-product-gallary',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-gallary.component.scss'],
 })
 export class ProductGallaryComponent implements OnInit {
+  previewImages: string[];
+
   index = 1;
   preview = 0;
 
   ngOnInit(): void {}
+
+  constructor(private productService: ProductService) {
+    this.previewImages = this.productService.getPreviewImages();
+  }
 
   carouselSwitch(isNext: boolean) {
     if (this.index > 3 && isNext) {
