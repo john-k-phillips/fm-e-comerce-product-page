@@ -5,15 +5,29 @@
       <img src="../../assets/logo.svg" alt="sneakers logo" />
       <button
         class="btn menu-btn"
-        role="button"
+        role="menu"
         aria-expanded="false"
         aria-label="open mobile menu"
       >
         <img src="../../assets/icon-menu.svg" alt="" aria-hidden="true" />
       </button>
-      <div class="nav-elements">
+      <div class="nav-elements animate-dropdown">
         <!-- Dropdown Items -->
         <ul class="nav-list">
+          <li class="nav-item">
+            <button
+              class="btn close-btn"
+              role="menu"
+              aria-expanded="true"
+              aria-label="close mobile menu"
+            >
+              <img
+                src="../../assets/icon-close.svg"
+                alt=""
+                aria-hidden="true"
+              />
+            </button>
+          </li>
           <li class="nav-item">
             <a href="#collections">Collections</a>
           </li>

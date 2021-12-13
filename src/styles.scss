@@ -18,3 +18,14 @@ button {
   background-color: transparent;
   border: none;
 }
+
+ul,
+ol {
+  list-style: none;
+  li {
+    a {
+      text-decoration: none;
+      color: currentColor;
+    }
+  }
+}
