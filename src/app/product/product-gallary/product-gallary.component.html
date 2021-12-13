@@ -1,29 +1,42 @@
-<section class="carousel" aria-label="Product Images">
-  <div class="carousel-images">
+<section class="carousel" aria-label="product images">
+  <!-- MAIN IMAGE -->
+  <div class="current-image carousel-images">
     <img
       class="current-img"
       [src]="'../../assets/image-product-' + index + '.jpg'"
-      alt="product image"
+      alt=""
     />
   </div>
   <div class="preview-images desktop">
-    <button class="carousel-images" (click)="setCurrentImage(1)">
-      <img src="../../assets/image-product-1.jpg" alt="product image" />
-    </button>
-    <button class="carousel-images" (click)="setCurrentImage(2)">
-      <img src="../../assets/image-product-2.jpg" alt="product image" />
-    </button>
-    <button class="carousel-images" (click)="setCurrentImage(3)">
-      <img src="../../assets/image-product-3.jpg" alt="product image" />
-    </button>
-    <button class="carousel-images" (click)="setCurrentImage(4)">
-      <img src="../../assets/image-product-4.jpg" alt="product image" />
+    <!-- PREVIEW IMAGES -->
+    <button
+      role="button"
+      aria-label="switch to preview image"
+      class="carousel-images"
+      *ngFor="let image of previewImages; let i = index"
+      [ngClass]="i === index ? 'active' : ''"
+      (click)="setCurrentImage(i + 1)"
+    >
+      <img src="{{ image }}" alt="" />
     </button>
   </div>
-  <button class="prev" (click)="carouselSwitch(true)">
-    <img src="../../assets/icon-previous.svg" alt="" />
+
+  <!-- ARROW BUTTONS FOR MOBILE -->
+  <button
+    role="button"
+    aria-label="previous"
+    class="prev"
+    (click)="carouselSwitch(true)"
+  >
+    <img src="../../assets/icon-previous.svg" alt="" aria-hidden="true" />
   </button>
-  <button class="next" (click)="carouselSwitch(true)">
-    <img src="../../assets/icon-next.svg" alt="" />
+
+  <button
+    role="button"
+    aria-label="next"
+    class="next"
+    (click)="carouselSwitch(true)"
+  >
+    <img src="../../assets/icon-next.svg" alt="" aria-hidden="false" />
   </button>
 </section>
