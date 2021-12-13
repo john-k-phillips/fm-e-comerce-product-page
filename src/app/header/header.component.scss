@@ -1,8 +1,4 @@
-// Header & Navbar Styles
-.nav-header {
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-
+// Extra Styles
 .btn {
   display: grid;
   place-items: center;
@@ -10,6 +6,15 @@
   padding: 0.3em;
 
   cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+// Header & Navbar Styles
+.nav-header {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .primary-nav,
@@ -38,7 +43,7 @@
   left: 0px;
   top: 0px;
 
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.75);
   width: 100%;
 }
 
@@ -68,10 +73,6 @@
   }
 }
 
-.hidden {
-  display: none;
-}
-
 // Details Styles
 .details-elements {
   margin-left: auto;
@@ -83,3 +84,78 @@
 }
 
 // Responsiveness
+@media screen and (min-width: 1024px) {
+  .nav-header {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .primary-nav {
+    padding: 1.5em 0em;
+  }
+
+  .main-elements {
+    flex-direction: row;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .logo {
+    margin-right: 2em;
+  }
+
+  .nav-elements {
+    position: relative;
+    left: auto;
+    top: auto;
+
+    background-color: transparent;
+    width: 100%;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+
+    background-color: transparent;
+    height: auto;
+    width: auto;
+    max-width: auto;
+
+    padding: 0em;
+
+    font-weight: 400;
+    .nav-item:first-child {
+      display: none;
+    }
+    .nav-item {
+      &:hover {
+        a {
+          border-bottom: 2px solid hsl(26, 100%, 55%);
+        }
+      }
+    }
+  }
+
+  .details-elements {
+    gap: 1.5em;
+    .profile-btn {
+      img {
+        width: 48px;
+        &:hover {
+          outline: 2px solid hsl(26, 100%, 55%);
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+
+  .hidden {
+    display: block;
+  }
+}
