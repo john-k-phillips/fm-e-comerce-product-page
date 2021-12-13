@@ -1,0 +1,40 @@
+// Carousel Styles
+.carousel {
+  width: 100%;
+  position: relative;
+}
+
+.carousel-images {
+  width: 100%;
+  img {
+    max-width: 100%;
+  }
+}
+
+// Carousel Button Styles
+.next,
+.prev {
+  position: absolute;
+  top: 50%;
+
+  background-color: white;
+  width: 40px;
+  height: 40px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  img {
+    width: 25%;
+  }
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
