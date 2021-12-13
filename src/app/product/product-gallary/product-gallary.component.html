@@ -12,9 +12,9 @@
     <button
       role="button"
       aria-label="switch to preview image"
-      class="carousel-images"
+      class="carousel-image"
       *ngFor="let image of previewImages; let i = index"
-      [ngClass]="i === index ? 'active' : ''"
+      [ngClass]="i + 1 === index ? 'active' : ''"
       (click)="setCurrentImage(i + 1)"
     >
       <img src="{{ image }}" alt="" />
