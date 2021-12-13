@@ -6,20 +6,22 @@
       <button
         class="btn menu-btn"
         role="menu"
-        aria-expanded="false"
+        attr.aria-expanded="{{ isNavOpen }}"
         aria-label="open mobile menu"
+        (click)="toggleNavigation()"
       >
         <img src="../../assets/icon-menu.svg" alt="" aria-hidden="true" />
       </button>
-      <div class="nav-elements animate-dropdown">
+      <div class="nav-elements" [ngClass]="isNavOpen ? '' : 'hidden'">
         <!-- Dropdown Items -->
         <ul class="nav-list">
           <li class="nav-item">
             <button
               class="btn close-btn"
               role="menu"
-              aria-expanded="true"
+              attr.aria-expanded="{{ isNavOpen }}"
               aria-label="close mobile menu"
+              (click)="toggleNavigation()"
             >
               <img
                 src="../../assets/icon-close.svg"

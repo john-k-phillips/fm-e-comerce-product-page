@@ -58,6 +58,18 @@
   .nav-item:first-child {
     margin-bottom: 2em;
   }
+  .nav-item {
+    a {
+      &:focus {
+        outline: none;
+        border-bottom: 2px solid hsl(26, 100%, 55%);
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
 }
 
 // Details Styles
