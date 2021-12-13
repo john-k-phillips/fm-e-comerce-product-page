@@ -1,0 +1,50 @@
+// Header & Navbar Styles
+.nav-header {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.btn {
+  display: grid;
+  place-items: center;
+
+  padding: 0.3em;
+
+  cursor: pointer;
+}
+
+.primary-nav,
+.main-elements,
+.details-elements {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.main-elements {
+  flex-direction: row-reverse;
+  align-items: baseline;
+}
+
+.primary-nav {
+  display: flex;
+
+  margin: auto;
+  padding: 1em;
+}
+
+// Main Navigation Styles
+.nav-elements {
+  display: none;
+}
+
+// Details Styles
+.details-elements {
+  margin-left: auto;
+}
+.profile-btn {
+  img {
+    width: 24px;
+  }
+}
+
+// Responsiveness

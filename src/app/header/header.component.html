@@ -3,10 +3,16 @@
     <div class="main-elements">
       <!-- Dropdown / Navigation Elements -->
       <img src="../../assets/logo.svg" alt="sneakers logo" />
-      <button class="menu-btn" role="button" aria-expanded="false">
+      <button
+        class="btn menu-btn"
+        role="button"
+        aria-expanded="false"
+        aria-label="open mobile menu"
+      >
         <img src="../../assets/icon-menu.svg" alt="" aria-hidden="true" />
       </button>
       <div class="nav-elements">
+        <!-- Dropdown Items -->
         <ul class="nav-list">
           <li class="nav-item">
             <a href="#collections">Collections</a>
@@ -25,12 +31,26 @@
           </li>
         </ul>
       </div>
-      <!-- Details Elements -->
-      <div class="details-elements">
-        <button class="cart-btn" role="button" aria-expanded="false">
-          <img src="../../assets/icon-cart.svg" alt="" aria-hidden="true" />
-        </button>
-      </div>
+    </div>
+
+    <!-- Details Elements -->
+    <div class="details-elements">
+      <button
+        class="btn cart-btn"
+        role="menu"
+        aria-expanded="false"
+        aria-label="toggle shopping cart"
+      >
+        <img src="../../assets/icon-cart.svg" alt="" aria-hidden="true" />
+      </button>
+      <button
+        class="btn profile-btn"
+        role="menu"
+        aria-expanded="false"
+        aria-label="open user settings"
+      >
+        <img src="../../assets/image-avatar.png" alt="" aria-hidden="true" />
+      </button>
     </div>
   </nav>
 </header>
