@@ -14,15 +14,15 @@
     </div>
     <div class="cart-controls">
       <div class="controls">
-        <button class="increment-control">
+        <button class="increment-control" (click)="changeValue(false)">
           <img src="../../assets/icon-minus.svg" alt="" aria-hidden="true" />
         </button>
-        <input type="number" value="0" />
-        <button class="increment-control">
+        <input type="number" [(ngModel)]="value" />
+        <button class="increment-control" (click)="changeValue(true)">
           <img src="../../assets/icon-plus.svg" alt="" aria-hidden="true" />
         </button>
       </div>
-      <button class="cart-btn">
+      <button class="cart-btn" (click)="onAdd()">
         <img src="../../assets/icon-cart-white.svg" alt="" aria-hidden="true" />
         Add to cart
       </button>

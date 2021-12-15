@@ -84,6 +84,28 @@
   }
 }
 
+.cart-btn {
+  position: relative;
+}
+
+.cart-value {
+  display: grid;
+  place-items: center;
+
+  width: 20px;
+  height: 15px;
+
+  background-color: hsl(26, 100%, 55%);
+  border-radius: 1em;
+
+  color: white;
+  font-size: 0.8em;
+
+  position: absolute;
+  top: -3px;
+  right: 0;
+}
+
 // Responsiveness
 @media screen and (min-width: 1024px) {
   .nav-header {

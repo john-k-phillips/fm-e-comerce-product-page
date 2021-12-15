@@ -57,6 +57,7 @@
         aria-expanded="false"
         aria-label="toggle shopping cart"
       >
+        <span *ngIf="cartValue > 0" class="cart-value">{{ cartValue }}</span>
         <img src="../../assets/icon-cart.svg" alt="" aria-hidden="true" />
       </button>
       <button
