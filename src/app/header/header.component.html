@@ -8,7 +8,7 @@
         role="menu"
         attr.aria-expanded="{{ isNavOpen }}"
         aria-label="open mobile menu"
-        (click)="toggleNavigation()"
+        (click)="toggleMenus(false)"
       >
         <img src="../../assets/icon-menu.svg" alt="" aria-hidden="true" />
       </button>
@@ -21,7 +21,7 @@
               role="menu"
               attr.aria-expanded="{{ isNavOpen }}"
               aria-label="close mobile menu"
-              (click)="toggleNavigation()"
+              (click)="toggleMenus(false)"
             >
               <img
                 src="../../assets/icon-close.svg"
@@ -56,10 +56,41 @@
         role="menu"
         aria-expanded="false"
         aria-label="toggle shopping cart"
+        (click)="toggleMenus(true)"
       >
         <span *ngIf="cartValue > 0" class="cart-value">{{ cartValue }}</span>
         <img src="../../assets/icon-cart.svg" alt="" aria-hidden="true" />
       </button>
+      <div class="product-cart" [ngClass]="isCartOpen ? '' : 'cartHidden'">
+        <h4>Cart</h4>
+        <hr />
+        <div class="product-container" *ngIf="cartValue">
+          <img
+            src="../../assets//image-product-1-thumbnail.jpg"
+            alt=""
+            aria-hidden="true"
+          />
+          <div class="product-details">
+            <p>Autumn Limited Edition...</p>
+            <span class="amount">$125.00 </span>
+            <span *ngIf="cartValue > 1" class="amount">
+              x {{ cartValue + 1 }}
+            </span>
+            <span *ngIf="cartValue > 0" style="font-weight: bold"
+              >${{ total }}.00</span
+            >
+          </div>
+          <button
+            class="delete-btn"
+            role="button"
+            type="reset"
+            (click)="deleteItems()"
+          >
+            <img src="../../assets/icon-delete.svg" alt="" aria-hidden="true" />
+          </button>
+        </div>
+        <button class="checkout">Checkout</button>
+      </div>
       <button
         class="btn profile-btn"
         role="menu"

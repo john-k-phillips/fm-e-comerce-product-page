@@ -12,6 +12,10 @@
   display: none;
 }
 
+.cartHidden {
+  display: none;
+}
+
 // Header & Navbar Styles
 .nav-header {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -106,8 +110,66 @@
   right: 0;
 }
 
+// Cart Open Styling
+.product-cart {
+  position: absolute;
+  top: 10%;
+  left: 2.5%;
+  width: 95%;
+  max-width: 375px;
+  background-color: white;
+  border-radius: 0.5em;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  z-index: 1;
+  .product-container {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    .delete-btn {
+      width: 16px;
+      margin-left: auto;
+    }
+  }
+
+  hr {
+    opacity: 0.5;
+  }
+  h4 {
+    padding: 1em;
+  }
+  img {
+    width: 64px;
+    border-radius: 0.5em;
+  }
+  p {
+    opacity: 0.7;
+  }
+  .amount {
+    opacity: 0.5;
+  }
+}
+
+.checkout {
+  background-color: hsl(26, 100%, 55%);
+  padding: 1.2em 1em;
+  width: 90%;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.5em;
+  margin: 0em 1em;
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+
 // Responsiveness
 @media screen and (min-width: 1024px) {
+  .product-cart {
+    right: 15%;
+    top: 8em;
+    left: auto;
+  }
   .nav-header {
     width: 95%;
     max-width: 1200px;
@@ -165,6 +227,10 @@
     }
   }
 
+  .hidden {
+    display: block;
+  }
+
   .details-elements {
     gap: 1.5em;
     .profile-btn {
@@ -176,9 +242,5 @@
         }
       }
     }
-  }
-
-  .hidden {
-    display: block;
   }
 }
