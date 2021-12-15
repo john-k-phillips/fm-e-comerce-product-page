@@ -38,7 +38,7 @@ Your users should be able to:
 
 <!-- IMAGE MAY NEED REPLACING -->
 
-![](./design/mobile-design.jpg)
+![](./src/assets/design/mobile-design.jpg)
 
 <!-- REPLACE LIST ITEMS -->
 <h2>Satisfaction</h2>
