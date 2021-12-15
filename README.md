@@ -1,27 +1,76 @@
-# EComereceProductPage
+<!-- USE THIS TEMPLATE FOR FUTURE FRONTEND MENTOR PROJECTS, CLEAN CONSISTENT README'S FOR ALL PROJECTS - PAST SELF. -->
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+<!-- REPLACE HREFS & PROJECT NAMES -->
+<h1>E-Commerece Product Page</h1>
+<p>
+  This is a solution to the 
+  
+  [E-Commerce landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7).
+  
+  Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+</p>
 
-## Development server
+<!-- REPLACE HREFS -->
+<a href="https://www.frontendmentor.io/solutions/ecommerce-product-page-fkMrPMngt" target="_blank">
+  <img src=https://img.shields.io/badge/solution-3e54a3?&style=for-the-badge&logo=frontendmentor&logoColor=white alt=github style="margin-bottom: 5px;" />
+</a>
+<a href="https://fervent-lichterman-0b46c7.netlify.app/" target="_blank">
+  <img src=https://img.shields.io/badge/live%20demo-lightgreen?&style=for-the-badge&logo=html5&logoColor=333 alt=live-link style="margin-bottom: 5px;" />
+</a>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<!-- REPLACE TASKS -->
+<h2>Overview</h2>
+Your challenge is to build out this e-commerece product landing page and get it looking as close to the design as possible.
 
-## Code scaffolding
+Your users should be able to:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [x] View the optimal layout for the site depending on their device's screen size
+- [x] See hover states for all interactive elements on the page
+- [ ] Open a lightbox gallery by clicking on the large product image
+- [x] Switch the large product image by clicking on the small thumbnail images
+- [x] Add items to the cart
+- [x] View the cart and remove items from it
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<!-- IMAGE MAY NEED REPLACING -->
 
-## Further help
+![](./design/mobile-design.jpg)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<!-- REPLACE LIST ITEMS -->
+<h2>Satisfaction</h2>
+<h3>The Good</h3>
+  <ul>
+    <li>Happy with the use of Angular.</li>
+    <li>Overall a quick project.</li>
+  </ul>
+<h3>The Bad</h3>
+  <ul>
+    <li>Some features are missing.</li>
+    <li>The code began to get clunky as the project got larger.</li>
+  </ul>
+
+<!-- UPDATE ENTIRE SECTION -->
+<h2>The Process</h2>
+<h3>Tools</h3>
+<p>
+  <img alt="HTML5" src="https://img.shields.io/badge/-HTML5-red?style=flat-square&logo=html5&logoColor=white" />
+  <img alt="CSS3" src="https://img.shields.io/badge/-CSS3-blue?style=flat-square&logo=css3&logoColor=white" />
+  <img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-ffd32b?style=flat-square&logo=JavaScript&logoColor=black" />
+  
+   <img alt="Angular" src="https://img.shields.io/badge/-Angular-C62828?style=flat-square&logo=Angular&logoColor=white" />
+</p>
+<h3>What I Learnt</h3>
+  <p>
+    This was a great project to practice my Angular skills that I've been learning. Although it isn't perfect and doesn't use all of the features.
+    I am happy that I was able to create and use "Subjects" from RXJS.
+  </p>
+<h3>Continued Development</h3>
+  <p>
+    There are a few features missing (light box) and accessibility issues, these will defiently need a revisit in the future.
+  </p>
+  
+<!--  Thank you for taking the time to review my projects!  -->
