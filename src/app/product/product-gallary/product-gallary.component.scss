@@ -4,6 +4,11 @@
   position: relative;
 }
 
+.current-img,
+.carousel-image {
+  cursor: pointer;
+}
+
 .desktop {
   display: none;
 }
